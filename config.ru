@@ -1,2 +1,2 @@
-require './routes.rb'
+require './certifyed3d.rb'
 run Sinatra::Application
