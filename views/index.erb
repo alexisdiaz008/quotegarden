@@ -11,8 +11,9 @@
 <body>
 	<%# raise %>
 <div class="row">
-<blockquote class="tweet-this quote col-md-offset-1 col-md-10 fadeIn wow" data-wow-duration="2.3s" data-wow-delay="0.4s"><p><%= @quote['quote'] %>
-  <span>- <%= @quote['author'] %></span></p>
+<blockquote class="tweet-this quote col-md-offset-1 col-md-10"><p class=" fadeIn wow" data-wow-duration="2.3s" data-wow-delay="1s">
+	<%= @quote['quote'] %>
+  <span class=" fadeIn wow" data-wow-duration="2.3s" data-wow-delay="2s">- <%= @quote['author'] %></span></p>
 </blockquote>
 </div>
 
@@ -28,7 +29,7 @@
 <script src="js/jquery.appear.js"></script>
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/general.js"></script>
-<script type="text/javascript">google.load("search", "1");</script>
+<script type="text/javascript">//google.load("search", "1");</script>
 
 <!-- /SCRIPTS -->
 </body>
