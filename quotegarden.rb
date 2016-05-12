@@ -20,7 +20,7 @@ get '/' do
     "Accept" => "application/json"
   }))
   results = GoogleCustomSearchApi.search(@quote['author'])
-  raise
+  # raise
   # File.read(File.join('index.html'))
   erb :index
 end
