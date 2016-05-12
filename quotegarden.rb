@@ -19,7 +19,7 @@ get '/' do
     "Content-Type" => "application/x-www-form-urlencoded",
     "Accept" => "application/json"
   }))
-  results = GoogleCustomSearchApi.search(@quote['author'])
+  # results = GoogleCustomSearchApi.search(@quote['author'])
   # raise
   # File.read(File.join('index.html'))
   erb :index
