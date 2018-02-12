@@ -15,7 +15,7 @@ get '/' do
   # @quote = HTTParty.get('https://healthruwords.p.mashape.com/v1/quotes/')
   @quote = JSON.parse(HTTParty.get('https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies', 
     :headers => {
-    "X-Mashape-Key" => "L8mkOYD71DmshNiPAlvv8nSaelynp1KLQtMjsnZlIRIx0lL3Yc",
+    "X-Mashape-Key" => "#{MASHAPE_KEY}",
     "Content-Type" => "application/x-www-form-urlencoded",
     "Accept" => "application/json"
   }))
