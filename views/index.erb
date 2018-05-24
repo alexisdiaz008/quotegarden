@@ -12,8 +12,8 @@
 	<%# raise %>
 <div class="row">
 <blockquote class="tweet-this quote col-md-offset-1 col-md-10"><p class=" fadeIn wow" data-wow-duration="2.3s" data-wow-delay="1s">
-	<%= @quote['quote'] %>
-  <span class=" fadeIn wow" data-wow-duration="2.3s" data-wow-delay="2s">- <%= @quote['author'] %></span></p>
+	<%= @quote.parsed_response[0]["quote"] %>
+  <span class=" fadeIn wow" data-wow-duration="2.3s" data-wow-delay="2s">- <%= @quote.parsed_response[0]['author'] %></span></p>
 </blockquote>
 </div>
 
